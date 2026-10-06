@@ -1,0 +1,558 @@
+/* HyprTheme application chrome — AMOLED dark + glassmorphism.
+ * Accent colours (@ht_*) are defined at runtime from the working theme. */
+
+window.ht-window {
+  background: @ht_bg;
+  color: @ht_text;
+  font-family: "Inter", "Cantarell", "Noto Sans", "DejaVu Sans", sans-serif;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────────────────────── */
+.ht-sidebar {
+  background: alpha(@ht_surface, 0.55);
+  border-right: 1px solid alpha(@ht_accent, 0.14);
+  padding: 18px 12px;
+  min-width: 212px;
+}
+
+.ht-brand {
+  margin: 4px 8px 22px 8px;
+}
+
+.ht-brand-title {
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: @ht_text;
+}
+
+.ht-brand-sub {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: @ht_muted;
+}
+
+.ht-brand-icon {
+  -gtk-icon-size: 34px;
+}
+
+.ht-nav row {
+  padding: 0;
+  margin: 2px 0;
+  border-radius: 12px;
+  background: transparent;
+  transition: background 180ms ease, box-shadow 180ms ease;
+}
+
+.ht-nav row:hover {
+  background: alpha(@ht_accent, 0.08);
+}
+
+.ht-nav row:selected {
+  background: alpha(@ht_accent, 0.16);
+  box-shadow: inset 3px 0 0 @ht_accent, 0 0 14px alpha(@ht_accent, 0.18);
+}
+
+.ht-nav row:selected label {
+  color: @ht_text;
+}
+
+.ht-nav row:selected image {
+  color: @ht_accent;
+}
+
+.ht-nav-row {
+  padding: 10px 12px;
+}
+
+.ht-nav-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: alpha(@ht_text, 0.82);
+}
+
+.ht-nav-icon {
+  color: @ht_muted;
+  -gtk-icon-size: 16px;
+}
+
+.ht-sidebar-footer {
+  margin: 8px;
+  font-size: 11px;
+  color: @ht_muted;
+}
+
+/* ── Header ──────────────────────────────────────────────────────────────── */
+.ht-header {
+  background: alpha(@ht_surface, 0.45);
+  border-bottom: 1px solid alpha(@ht_accent, 0.12);
+  box-shadow: none;
+  padding: 6px 10px;
+  min-height: 56px;
+}
+
+.ht-header-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ht-header-sub {
+  font-size: 11.5px;
+  color: @ht_muted;
+}
+
+.ht-dirty-dot {
+  color: @ht_warning;
+  font-size: 11px;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+button.ht-btn {
+  border-radius: 11px;
+  padding: 7px 14px;
+  background: alpha(@ht_surface2, 0.85);
+  border: 1px solid alpha(@ht_accent, 0.22);
+  color: @ht_text;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  box-shadow: none;
+  transition: all 150ms ease;
+}
+
+button.ht-btn:hover {
+  border-color: alpha(@ht_accent, 0.6);
+  background: alpha(@ht_accent, 0.12);
+}
+
+button.ht-btn:active {
+  background: alpha(@ht_accent, 0.25);
+}
+
+button.ht-btn:disabled {
+  opacity: 0.4;
+}
+
+button.ht-btn.ht-primary {
+  background: linear-gradient(135deg, @ht_gradient_start, @ht_gradient_end);
+  border-color: transparent;
+  color: @ht_on_accent;
+  box-shadow: 0 0 18px alpha(@ht_glow, 0.45);
+}
+
+button.ht-btn.ht-primary:hover {
+  box-shadow: 0 0 26px alpha(@ht_glow, 0.7);
+}
+
+button.ht-btn.ht-danger:hover {
+  border-color: alpha(@ht_error, 0.7);
+  background: alpha(@ht_error, 0.14);
+}
+
+button.ht-icon-btn {
+  border-radius: 10px;
+  padding: 6px;
+  min-width: 0;
+  min-height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  color: @ht_muted;
+  box-shadow: none;
+}
+
+button.ht-icon-btn:hover {
+  color: @ht_text;
+  background: alpha(@ht_accent, 0.12);
+}
+
+/* ── Pages & cards ───────────────────────────────────────────────────────── */
+.ht-page {
+  padding: 26px 30px 36px 30px;
+}
+
+.ht-page-title {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.ht-page-subtitle {
+  font-size: 13px;
+  color: @ht_muted;
+  margin-bottom: 6px;
+}
+
+.ht-card {
+  background: alpha(@ht_surface, 0.62);
+  border: 1px solid alpha(@ht_accent, 0.16);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px alpha(black, 0.35);
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.ht-card:hover {
+  border-color: alpha(@ht_accent, 0.3);
+}
+
+.ht-card.ht-card-glow {
+  box-shadow: 0 0 24px alpha(@ht_glow, 0.14), 0 10px 30px alpha(black, 0.35);
+}
+
+.ht-card-title {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: @ht_accent;
+  margin-bottom: 4px;
+}
+
+.ht-card-desc {
+  font-size: 12px;
+  color: @ht_muted;
+}
+
+.ht-hero-name {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.ht-stat-label {
+  font-size: 10.5px;
+  letter-spacing: 1.5px;
+  color: @ht_muted;
+  font-weight: 700;
+}
+
+.ht-stat-value {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.ht-mono {
+  font-family: "JetBrainsMono Nerd Font", "JetBrains Mono", "DejaVu Sans Mono", monospace;
+}
+
+.ht-muted {
+  color: @ht_muted;
+}
+
+.ht-small {
+  font-size: 11.5px;
+}
+
+.ht-accent-text {
+  color: @ht_accent;
+}
+
+/* ── Status pills ────────────────────────────────────────────────────────── */
+.ht-pill {
+  border-radius: 999px;
+  padding: 4px 11px 4px 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  border: 1px solid alpha(@ht_muted, 0.3);
+  background: alpha(@ht_surface2, 0.8);
+  color: @ht_text;
+}
+
+.ht-pill.installed {
+  border-color: alpha(@ht_success, 0.5);
+  color: @ht_success;
+  background: alpha(@ht_success, 0.1);
+}
+
+.ht-pill.missing {
+  border-color: alpha(@ht_warning, 0.5);
+  color: @ht_warning;
+  background: alpha(@ht_warning, 0.1);
+}
+
+.ht-pill.error {
+  border-color: alpha(@ht_error, 0.5);
+  color: @ht_error;
+  background: alpha(@ht_error, 0.1);
+}
+
+.ht-pill.off {
+  opacity: 0.55;
+}
+
+/* ── Rows (color / slider / toggle) ──────────────────────────────────────── */
+.ht-row {
+  padding: 8px 6px;
+  border-bottom: 1px solid alpha(@ht_muted, 0.12);
+}
+
+.ht-row:last-child {
+  border-bottom: none;
+}
+
+.ht-row-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ht-row-desc {
+  font-size: 11px;
+  color: @ht_muted;
+}
+
+.ht-swatch {
+  border-radius: 9px;
+  min-width: 34px;
+  min-height: 24px;
+  border: 1px solid alpha(white, 0.18);
+}
+
+colorswatch,
+colorswatch > overlay {
+  border-radius: 8px;
+}
+
+button.ht-color-btn {
+  padding: 2px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid alpha(@ht_accent, 0.25);
+  box-shadow: none;
+  min-height: 0;
+}
+
+entry.ht-entry {
+  background: alpha(@ht_bg, 0.6);
+  border: 1px solid alpha(@ht_accent, 0.22);
+  border-radius: 9px;
+  color: @ht_text;
+  caret-color: @ht_accent;
+  padding: 4px 10px;
+  min-height: 28px;
+  box-shadow: none;
+}
+
+entry.ht-entry:focus {
+  border-color: @ht_accent;
+  box-shadow: 0 0 10px alpha(@ht_glow, 0.3);
+}
+
+entry.ht-entry.error {
+  border-color: @ht_error;
+}
+
+entry.ht-entry.ht-hex {
+  font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace;
+  min-width: 90px;
+}
+
+scale.ht-scale trough {
+  background: alpha(@ht_surface2, 0.9);
+  border: none;
+  border-radius: 999px;
+  min-height: 6px;
+}
+
+scale.ht-scale highlight {
+  background: linear-gradient(90deg, @ht_gradient_start, @ht_gradient_end);
+  border-radius: 999px;
+  border: none;
+}
+
+scale.ht-scale slider {
+  background: @ht_text;
+  border: 2px solid @ht_accent;
+  border-radius: 999px;
+  min-width: 16px;
+  min-height: 16px;
+  margin: -6px;
+  box-shadow: 0 0 10px alpha(@ht_glow, 0.5);
+}
+
+switch.ht-switch {
+  background: alpha(@ht_surface2, 0.95);
+  border: 1px solid alpha(@ht_muted, 0.3);
+  border-radius: 999px;
+  min-height: 22px;
+  min-width: 42px;
+}
+
+switch.ht-switch:checked {
+  background: linear-gradient(90deg, @ht_gradient_start, @ht_gradient_end);
+  border-color: transparent;
+  box-shadow: 0 0 12px alpha(@ht_glow, 0.45);
+}
+
+switch.ht-switch slider {
+  background: @ht_text;
+  border-radius: 999px;
+  min-width: 16px;
+  min-height: 16px;
+  margin: 2px;
+  box-shadow: none;
+}
+
+dropdown.ht-dropdown > button {
+  background: alpha(@ht_bg, 0.6);
+  border: 1px solid alpha(@ht_accent, 0.22);
+  border-radius: 9px;
+  color: @ht_text;
+  box-shadow: none;
+  padding: 3px 10px;
+  min-height: 28px;
+}
+
+popover.menu, popover > contents, popover.background > contents {
+  background: alpha(@ht_surface, 0.97);
+  border: 1px solid alpha(@ht_accent, 0.3);
+  border-radius: 12px;
+  color: @ht_text;
+}
+
+/* ── Theme cards ─────────────────────────────────────────────────────────── */
+button.ht-theme-card {
+  background: alpha(@ht_surface, 0.62);
+  border: 1px solid alpha(@ht_muted, 0.18);
+  border-radius: 16px;
+  padding: 0;
+  min-width: 200px;
+  box-shadow: none;
+  transition: all 160ms ease;
+}
+
+button.ht-theme-card:hover {
+  border-color: alpha(@ht_accent, 0.45);
+  box-shadow: 0 0 18px alpha(@ht_glow, 0.18);
+}
+
+button.ht-theme-card.selected {
+  border-color: @ht_accent;
+  box-shadow: 0 0 20px alpha(@ht_glow, 0.35);
+}
+
+.ht-theme-card-name {
+  font-size: 13.5px;
+  font-weight: 800;
+}
+
+.ht-theme-card-desc {
+  font-size: 10.5px;
+  color: @ht_muted;
+}
+
+.ht-theme-card-badge {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 999px;
+  padding: 1px 7px;
+  color: @ht_muted;
+  border: 1px solid alpha(@ht_muted, 0.4);
+}
+
+.ht-theme-card-badge.applied {
+  color: @ht_success;
+  border-color: alpha(@ht_success, 0.6);
+}
+
+/* ── Wallpaper grid ──────────────────────────────────────────────────────── */
+button.ht-wp-thumb {
+  padding: 0;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: alpha(@ht_surface2, 0.8);
+  box-shadow: none;
+  min-width: 0;
+  min-height: 0;
+}
+
+button.ht-wp-thumb:hover {
+  border-color: alpha(@ht_accent, 0.5);
+}
+
+button.ht-wp-thumb.selected {
+  border-color: @ht_accent;
+  box-shadow: 0 0 16px alpha(@ht_glow, 0.4);
+}
+
+.ht-wp-preview {
+  border-radius: 14px;
+  border: 1px solid alpha(@ht_accent, 0.3);
+  background: alpha(@ht_surface2, 0.6);
+}
+
+/* ── Backup list ─────────────────────────────────────────────────────────── */
+.ht-list {
+  background: transparent;
+}
+
+.ht-list > row {
+  background: alpha(@ht_surface2, 0.5);
+  border: 1px solid alpha(@ht_muted, 0.14);
+  border-radius: 12px;
+  margin: 3px 0;
+  padding: 8px 12px;
+}
+
+.ht-list > row:hover {
+  border-color: alpha(@ht_accent, 0.4);
+}
+
+/* ── Misc ────────────────────────────────────────────────────────────────── */
+scrollbar {
+  background: transparent;
+}
+
+scrollbar slider {
+  background: alpha(@ht_muted, 0.45);
+  border-radius: 999px;
+  min-width: 5px;
+  min-height: 5px;
+}
+
+scrollbar slider:hover {
+  background: @ht_accent;
+}
+
+toast {
+  background: alpha(@ht_surface, 0.96);
+  border: 1px solid alpha(@ht_accent, 0.4);
+  color: @ht_text;
+  border-radius: 12px;
+}
+
+tooltip {
+  background: alpha(@ht_surface, 0.97);
+  border: 1px solid alpha(@ht_accent, 0.35);
+  color: @ht_text;
+  border-radius: 8px;
+}
+
+dialog.alert,
+window.dialog,
+.ht-dialog {
+  background: @ht_surface;
+  color: @ht_text;
+}
+
+.ht-section-heading {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: @ht_muted;
+  margin: 10px 0 4px 2px;
+}
+
+.ht-kbd {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  background: alpha(@ht_surface2, 0.9);
+  border: 1px solid alpha(@ht_muted, 0.3);
+  border-radius: 6px;
+  padding: 1px 6px;
+  color: @ht_muted;
+}
+
+.ht-log {
+  font-family: "JetBrains Mono", "DejaVu Sans Mono", monospace;
+  font-size: 11px;
+  color: @ht_muted;
+}
