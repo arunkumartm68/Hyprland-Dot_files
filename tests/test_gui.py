@@ -20,12 +20,15 @@ from .conftest import REPO
 
 pytestmark = pytest.mark.gui
 
-gi = pytest.importorskip("gi", exc_type=ImportError)
 try:
+    import gi
+
     gi.require_version("Gtk", "4.0")
     gi.require_version("Adw", "1")
     from gi.repository import GLib
 except (ValueError, ImportError) as exc:  # pragma: no cover - environment dependent
+    # A plain try/except (not importorskip) so this works on pytest < 8.2 too, and so a
+    # half-installed gi (bindings built for another interpreter) is skipped, not an error.
     pytest.skip(f"GTK4/libadwaita not available: {exc}", allow_module_level=True)
 
 if not (os.environ.get("DISPLAY") or os.environ.get("WAYLAND_DISPLAY")):  # pragma: no cover
