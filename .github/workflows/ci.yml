@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  core:
+    name: Lint, type-check and test (core + CLI)
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install pytest ruff mypy
+      - run: ruff check hyprtheme tests
+      - run: ruff format --check hyprtheme tests
+      - run: mypy
+      - run: pytest -q
+
+  gui:
+    name: Headless GUI test (GTK4 + libadwaita)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-gi gir1.2-gtk-4.0 gir1.2-adw-1 libadwaita-1-0 xvfb fonts-inter fonts-jetbrains-mono adwaita-icon-theme python3-pytest
+      - run: xvfb-run -s "-screen 0 1400x900x24" python3 -m pytest -q tests/test_gui.py
+
+  shell:
+    name: Shell scripts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y shellcheck
+      - run: shellcheck -S warning install.sh uninstall.sh data/hyprtheme.sh
+      - run: |
+          export HOME="$RUNNER_TEMP/home"; mkdir -p "$HOME/.config"
+          ./install.sh --yes --no-deps --apply cyan
+          "$HOME/.local/bin/hyprtheme" current
+          ./uninstall.sh --yes --restore

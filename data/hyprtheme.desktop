@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=HyprTheme
+GenericName=Theme Control Center
+Comment=Hyprland Theme Control Center
+Exec=hyprtheme gui
+TryExec=hyprtheme
+Icon=hyprtheme
+Terminal=false
+Categories=Settings;DesktopSettings;GTK;Utility;
+Keywords=hyprland;theme;wayland;waybar;kitty;rofi;swaync;hyprlock;wlogout;wallpaper;rice;
+StartupNotify=true
+StartupWMClass=io.github.hyprtheme.HyprTheme
