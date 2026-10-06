@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get install -y shellcheck
-      - run: shellcheck -S warning install.sh uninstall.sh data/hyprtheme.sh
+      - run: shellcheck -S warning install.sh uninstall.sh data/hyprtheme.sh scripts/screenshot-presets.sh
       - run: |
           export HOME="$RUNNER_TEMP/home"; mkdir -p "$HOME/.config"
           ./install.sh --yes --no-deps --apply cyan

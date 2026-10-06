@@ -42,6 +42,7 @@ The test-suite runs entirely inside a temporary `$HOME`, so it never reads or wr
 | `templates/<component>/` | Config templates rendered from a theme. |
 | `themes/presets/` | Built-in presets (plain `theme.json` files). |
 | `assets/icons/` | Symbolic UI icons and the application icon. |
+| `scripts/` | `screenshot-presets.sh`: real-desktop captures of every preset. |
 | `tests/` | pytest suite. |
 | `config/` | The original reference dotfiles this project grew out of. |
 | `docs/` | Theme format, architecture, CLI and troubleshooting documentation. |

@@ -4,6 +4,9 @@ All notable changes to this project are documented here. The format follows [Kee
 
 ## [Unreleased]
 
+### Added
+- `scripts/screenshot-presets.sh`: applies every preset on a live Hyprland session, captures the real desktop with grim/hyprshot/grimblast, builds a contact sheet and restores the previous theme.
+
 ## [1.0.0] - 2026-10-06
 
 The repository turned from a personal dotfiles collection into **HyprTheme**, a Hyprland theme control center.

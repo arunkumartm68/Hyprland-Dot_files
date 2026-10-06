@@ -75,6 +75,15 @@ The GUI and the `hyprtheme` CLI share the same engine, so everything is scriptab
 
 The screenshots are rendered by the headless GUI test (`tests/test_gui.py`), so they always match the code.
 
+To capture your **real desktop** under every preset, run this inside your Hyprland session (needs `grim`, `hyprshot` or `grimblast`):
+
+```bash
+scripts/screenshot-presets.sh            # all presets → docs/screenshots/desktop/<id>.png
+scripts/screenshot-presets.sh --demo cyan red matrix   # open kitty + fastfetch, rofi and a notification first
+```
+
+It applies each preset through the normal engine, waits for the components to reload, takes the shot, builds a contact sheet when ImageMagick is installed, and restores the theme you had before.
+
 ## Architecture
 
 ```
@@ -96,6 +105,7 @@ hyprtheme/
 └── cli.py       command-line interface
 themes/presets/  built-in presets        templates/   per-component templates
 assets/icons/    UI + app icons          tests/       pytest suite (core + headless GUI)
+scripts/         screenshot-presets.sh (real desktop captures)
 docs/            format, architecture, CLI, troubleshooting
 config/          the original dotfiles this project grew out of (reference)
 install.sh · uninstall.sh · data/hyprtheme.desktop
