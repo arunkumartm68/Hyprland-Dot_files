@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "name": "Green",
+  "id": "green",
+  "author": "HyprTheme",
+  "description": "Hacker / Matrix vibe, premium",
+  "tags": [
+    "accent",
+    "hacker",
+    "cool"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#00FF88",
+    "secondary": "#00B894",
+    "highlight": "#7CFFB8",
+    "background": "#060A08",
+    "surface": "#0F1712",
+    "surface2": "#172219",
+    "text": "#FFFFFF",
+    "muted": "#86A896",
+    "border": "#00FF88",
+    "glow": "#00FF88",
+    "gradient_start": "#00FF88",
+    "gradient_end": "#00B894",
+    "notification": "#00FF88",
+    "success": "#4DFF88",
+    "warning": "#FFD166",
+    "error": "#FF4D6D",
+    "battery": "#4DFF88",
+    "system": "#00FF88",
+    "media": "#B8FF7C",
+    "workspace_active": "#00FF88",
+    "workspace_inactive": "#2E4A3A",
+    "active_border": "#00FF88",
+    "inactive_border": "#1F3A2C"
+  },
+  "effects": {},
+  "wallpaper": {},
+  "components": {},
+  "order": 2
+}

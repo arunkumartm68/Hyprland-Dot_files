@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "name": "Pink",
+  "id": "pink",
+  "author": "HyprTheme",
+  "description": "Vibrant, stylish, cyberpunk",
+  "tags": [
+    "accent",
+    "cyberpunk",
+    "vibrant"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#FF2DB6",
+    "secondary": "#8A2BE2",
+    "highlight": "#FF6AD5",
+    "background": "#0A0610",
+    "surface": "#160F1F",
+    "surface2": "#22172E",
+    "text": "#FFFFFF",
+    "muted": "#A68CB3",
+    "border": "#FF2DB6",
+    "glow": "#FF2DB6",
+    "gradient_start": "#FF2DB6",
+    "gradient_end": "#8A2BE2",
+    "notification": "#FF2DB6",
+    "success": "#4DFF88",
+    "warning": "#FFD166",
+    "error": "#FF4D6D",
+    "battery": "#4DFF88",
+    "system": "#FF2DB6",
+    "media": "#FF8BE0",
+    "workspace_active": "#FF2DB6",
+    "workspace_inactive": "#4A2E52",
+    "active_border": "#FF2DB6",
+    "inactive_border": "#36223F"
+  },
+  "effects": {},
+  "wallpaper": {},
+  "components": {},
+  "order": 5
+}

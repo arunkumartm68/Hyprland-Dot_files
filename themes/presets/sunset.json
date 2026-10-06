@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "name": "Sunset",
+  "id": "sunset",
+  "author": "HyprTheme",
+  "description": "Warm gradient from coral to violet",
+  "tags": [
+    "warm",
+    "gradient",
+    "pink"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#FF7A59",
+    "secondary": "#C84B9B",
+    "highlight": "#FFB86C",
+    "background": "#120812",
+    "surface": "#1E0F1E",
+    "surface2": "#2C172B",
+    "text": "#FFF1EA",
+    "muted": "#B4959F",
+    "border": "#FF7A59",
+    "glow": "#C84B9B",
+    "gradient_start": "#FF7A59",
+    "gradient_end": "#7B2CBF",
+    "notification": "#FFB86C",
+    "success": "#8CE99A",
+    "warning": "#FFB86C",
+    "error": "#FF5D73",
+    "battery": "#8CE99A",
+    "system": "#FF7A59",
+    "media": "#C84B9B",
+    "workspace_active": "#FF7A59",
+    "workspace_inactive": "#4D2E45",
+    "active_border": "#FF7A59",
+    "inactive_border": "#3A2235"
+  },
+  "effects": {
+    "glow": 0.55,
+    "radius": 16,
+    "gradient": true
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 15
+}

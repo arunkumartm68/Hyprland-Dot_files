@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "name": "Ben 10",
+  "id": "ben-10",
+  "author": "HyprTheme",
+  "description": "Omnitrix green on black with alien-tech accents",
+  "tags": [
+    "green",
+    "black",
+    "fun"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#2EFF2E",
+    "secondary": "#00B3B3",
+    "highlight": "#9CFF57",
+    "background": "#040705",
+    "surface": "#0B130D",
+    "surface2": "#132014",
+    "text": "#F2FFF2",
+    "muted": "#7FA389",
+    "border": "#2EFF2E",
+    "glow": "#2EFF2E",
+    "gradient_start": "#2EFF2E",
+    "gradient_end": "#00B3B3",
+    "notification": "#2EFF2E",
+    "success": "#2EFF2E",
+    "warning": "#FFE23D",
+    "error": "#FF3D3D",
+    "battery": "#2EFF2E",
+    "system": "#00B3B3",
+    "media": "#9CFF57",
+    "workspace_active": "#2EFF2E",
+    "workspace_inactive": "#1E4A24",
+    "active_border": "#2EFF2E",
+    "inactive_border": "#153A1A"
+  },
+  "effects": {
+    "glow": 0.75,
+    "radius": 20,
+    "border_width": 3
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 16
+}

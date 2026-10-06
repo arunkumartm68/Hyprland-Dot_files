@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "name": "Yellow",
+  "id": "yellow",
+  "author": "HyprTheme",
+  "description": "Luxury, futuristic",
+  "tags": [
+    "accent",
+    "luxury",
+    "warm"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#FFD700",
+    "secondary": "#FF9F1C",
+    "highlight": "#FFE766",
+    "background": "#0B0A05",
+    "surface": "#17150B",
+    "surface2": "#232012",
+    "text": "#FFFFFF",
+    "muted": "#AFA784",
+    "border": "#FFD700",
+    "glow": "#FFD700",
+    "gradient_start": "#FFD700",
+    "gradient_end": "#FF9F1C",
+    "notification": "#FFD700",
+    "success": "#4DFF88",
+    "warning": "#FFD166",
+    "error": "#FF4D6D",
+    "battery": "#4DFF88",
+    "system": "#FFD700",
+    "media": "#FFB347",
+    "workspace_active": "#FFD700",
+    "workspace_inactive": "#4A4426",
+    "active_border": "#FFD700",
+    "inactive_border": "#3A361F"
+  },
+  "effects": {},
+  "wallpaper": {},
+  "components": {},
+  "order": 7
+}

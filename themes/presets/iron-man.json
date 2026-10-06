@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "name": "Iron Man",
+  "id": "iron-man",
+  "author": "HyprTheme",
+  "description": "Hot-rod red and gold, arc-reactor glow",
+  "tags": [
+    "marvel",
+    "red",
+    "gold"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#FFB300",
+    "secondary": "#C8102E",
+    "highlight": "#FFD54F",
+    "background": "#0D0608",
+    "surface": "#1A0C10",
+    "surface2": "#281218",
+    "text": "#FFF5E6",
+    "muted": "#B39A8A",
+    "border": "#C8102E",
+    "glow": "#FFB300",
+    "gradient_start": "#C8102E",
+    "gradient_end": "#FFB300",
+    "notification": "#FFB300",
+    "success": "#6EE7B7",
+    "warning": "#FFB300",
+    "error": "#FF3B3B",
+    "battery": "#FFB300",
+    "system": "#7DD3FC",
+    "media": "#FFD54F",
+    "workspace_active": "#C8102E",
+    "workspace_inactive": "#4A2A32",
+    "active_border": "#C8102E",
+    "inactive_border": "#3A1F27"
+  },
+  "effects": {
+    "glow": 0.8,
+    "radius": 12
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 12
+}

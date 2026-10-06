@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "name": "Cyan",
+  "id": "cyan",
+  "author": "HyprTheme",
+  "description": "Futuristic, clean, cyberpunk",
+  "tags": [
+    "accent",
+    "cyberpunk",
+    "cool"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#00E5FF",
+    "secondary": "#0077FF",
+    "highlight": "#5CF2FF",
+    "background": "#080A0F",
+    "surface": "#11151D",
+    "surface2": "#1A2030",
+    "text": "#FFFFFF",
+    "muted": "#8B95A7",
+    "border": "#00E5FF",
+    "glow": "#00E5FF",
+    "gradient_start": "#00E5FF",
+    "gradient_end": "#0077FF",
+    "notification": "#00E5FF",
+    "success": "#4DFF88",
+    "warning": "#FFD166",
+    "error": "#FF4D6D",
+    "battery": "#4DFF88",
+    "system": "#00E5FF",
+    "media": "#FF6AD5",
+    "workspace_active": "#00E5FF",
+    "workspace_inactive": "#3A4457",
+    "active_border": "#00E5FF",
+    "inactive_border": "#2A3140"
+  },
+  "effects": {},
+  "wallpaper": {},
+  "components": {},
+  "order": 0
+}

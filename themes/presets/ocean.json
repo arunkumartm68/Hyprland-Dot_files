@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "name": "Ocean",
+  "id": "ocean",
+  "author": "HyprTheme",
+  "description": "Deep sea blues and teals, calm and glassy",
+  "tags": [
+    "blue",
+    "calm",
+    "nature"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#22D3EE",
+    "secondary": "#0EA5E9",
+    "highlight": "#67E8F9",
+    "background": "#031018",
+    "surface": "#07202C",
+    "surface2": "#0C2E3E",
+    "text": "#E6FBFF",
+    "muted": "#7FB3C3",
+    "border": "#22D3EE",
+    "glow": "#0EA5E9",
+    "gradient_start": "#22D3EE",
+    "gradient_end": "#0369A1",
+    "notification": "#22D3EE",
+    "success": "#34D399",
+    "warning": "#FBBF24",
+    "error": "#FB7185",
+    "battery": "#34D399",
+    "system": "#38BDF8",
+    "media": "#A78BFA",
+    "workspace_active": "#22D3EE",
+    "workspace_inactive": "#1E4A5C",
+    "active_border": "#22D3EE",
+    "inactive_border": "#113848"
+  },
+  "effects": {
+    "opacity": 0.8,
+    "blur": 18,
+    "radius": 18,
+    "glow": 0.45
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 14
+}

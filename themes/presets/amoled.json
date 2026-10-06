@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "name": "AMOLED",
+  "id": "amoled",
+  "author": "HyprTheme",
+  "description": "Pure black, high contrast, battery friendly",
+  "tags": [
+    "amoled",
+    "minimal"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#E5E7EB",
+    "secondary": "#9CA3AF",
+    "highlight": "#FFFFFF",
+    "background": "#000000",
+    "surface": "#000000",
+    "surface2": "#0E0E0E",
+    "text": "#FFFFFF",
+    "muted": "#6B7280",
+    "border": "#E5E7EB",
+    "glow": "#E5E7EB",
+    "gradient_start": "#E5E7EB",
+    "gradient_end": "#9CA3AF",
+    "notification": "#E5E7EB",
+    "success": "#7CFFB2",
+    "warning": "#FFD166",
+    "error": "#FF6B6B",
+    "battery": "#7CFFB2",
+    "system": "#E5E7EB",
+    "media": "#A3A3A3",
+    "workspace_active": "#E5E7EB",
+    "workspace_inactive": "#2A2A2A",
+    "active_border": "#E5E7EB",
+    "inactive_border": "#1A1A1A"
+  },
+  "effects": {
+    "opacity": 1.0,
+    "blur": 0,
+    "glow": 0.0,
+    "glass": false,
+    "neon_glow": false,
+    "gradient": false,
+    "shadows": false,
+    "radius": 10,
+    "border_width": 1
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 9
+}

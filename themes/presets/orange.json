@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "name": "Orange",
+  "id": "orange",
+  "author": "HyprTheme",
+  "description": "Warm, futuristic, unique",
+  "tags": [
+    "accent",
+    "warm"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#FFA500",
+    "secondary": "#FF5E3A",
+    "highlight": "#FFC14D",
+    "background": "#0C0906",
+    "surface": "#18120C",
+    "surface2": "#241A12",
+    "text": "#FFFFFF",
+    "muted": "#A8967F",
+    "border": "#FFA500",
+    "glow": "#FFA500",
+    "gradient_start": "#FFA500",
+    "gradient_end": "#FF5E3A",
+    "notification": "#FFA500",
+    "success": "#4DFF88",
+    "warning": "#FFD166",
+    "error": "#FF4D6D",
+    "battery": "#4DFF88",
+    "system": "#FFA500",
+    "media": "#FF7B9C",
+    "workspace_active": "#FFA500",
+    "workspace_inactive": "#4A3A26",
+    "active_border": "#FFA500",
+    "inactive_border": "#3A2D1E"
+  },
+  "effects": {},
+  "wallpaper": {},
+  "components": {},
+  "order": 3
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "name": "Red",
+  "id": "red",
+  "author": "HyprTheme",
+  "description": "Bold, powerful, anime-inspired",
+  "tags": [
+    "accent",
+    "bold",
+    "warm"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#FF2E2E",
+    "secondary": "#FF7A00",
+    "highlight": "#FF5C5C",
+    "background": "#0B0608",
+    "surface": "#161014",
+    "surface2": "#22171C",
+    "text": "#FFFFFF",
+    "muted": "#A58B91",
+    "border": "#FF2E2E",
+    "glow": "#FF2E2E",
+    "gradient_start": "#FF2E2E",
+    "gradient_end": "#FF7A00",
+    "notification": "#FF2E2E",
+    "success": "#4DFF88",
+    "warning": "#FFD166",
+    "error": "#FF4D6D",
+    "battery": "#4DFF88",
+    "system": "#FF2E2E",
+    "media": "#FF9F6B",
+    "workspace_active": "#FF2E2E",
+    "workspace_inactive": "#4A2E35",
+    "active_border": "#FF2E2E",
+    "inactive_border": "#3A2228"
+  },
+  "effects": {},
+  "wallpaper": {},
+  "components": {},
+  "order": 1
+}

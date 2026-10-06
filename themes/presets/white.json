@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "name": "White",
+  "id": "white",
+  "author": "HyprTheme",
+  "description": "Clean, modern, premium",
+  "tags": [
+    "accent",
+    "minimal",
+    "monochrome"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#FFFFFF",
+    "secondary": "#C7CCD6",
+    "highlight": "#E6E9EF",
+    "background": "#050505",
+    "surface": "#121212",
+    "surface2": "#1C1C1C",
+    "text": "#FFFFFF",
+    "muted": "#8A8F99",
+    "border": "#FFFFFF",
+    "glow": "#FFFFFF",
+    "gradient_start": "#FFFFFF",
+    "gradient_end": "#C7CCD6",
+    "notification": "#FFFFFF",
+    "success": "#9BE39B",
+    "warning": "#F3D37A",
+    "error": "#FF7A7A",
+    "battery": "#9BE39B",
+    "system": "#FFFFFF",
+    "media": "#D6DAE0",
+    "workspace_active": "#FFFFFF",
+    "workspace_inactive": "#3A3D44",
+    "active_border": "#FFFFFF",
+    "inactive_border": "#2B2E34"
+  },
+  "effects": {
+    "glow": 0.3,
+    "gradient": false
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 6
+}

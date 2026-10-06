@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "name": "Cyberpunk",
+  "id": "cyberpunk",
+  "author": "HyprTheme",
+  "description": "Neon yellow on deep violet, Night City style",
+  "tags": [
+    "cyberpunk",
+    "neon"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#FCEE0A",
+    "secondary": "#00F0FF",
+    "highlight": "#FF003C",
+    "background": "#0A0714",
+    "surface": "#140F24",
+    "surface2": "#1F1735",
+    "text": "#F5F3FF",
+    "muted": "#9A91BF",
+    "border": "#FCEE0A",
+    "glow": "#00F0FF",
+    "gradient_start": "#FCEE0A",
+    "gradient_end": "#FF003C",
+    "notification": "#00F0FF",
+    "success": "#39FF14",
+    "warning": "#FCEE0A",
+    "error": "#FF003C",
+    "battery": "#39FF14",
+    "system": "#00F0FF",
+    "media": "#FF003C",
+    "workspace_active": "#FCEE0A",
+    "workspace_inactive": "#4A3F75",
+    "active_border": "#FCEE0A",
+    "inactive_border": "#2E2450"
+  },
+  "effects": {
+    "glow": 0.85,
+    "blur": 16,
+    "radius": 6
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 10
+}

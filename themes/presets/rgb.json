@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "name": "RGB",
+  "id": "rgb",
+  "author": "HyprTheme",
+  "description": "Dynamic multicolor \u2014 the border gradient rotates continuously",
+  "tags": [
+    "accent",
+    "rgb",
+    "dynamic"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#FF3CAC",
+    "secondary": "#2B86C5",
+    "highlight": "#FFD166",
+    "background": "#07070C",
+    "surface": "#12121C",
+    "surface2": "#1C1C2A",
+    "text": "#FFFFFF",
+    "muted": "#9AA0B4",
+    "border": "#FF3CAC",
+    "glow": "#784BA0",
+    "gradient_start": "#FF3CAC",
+    "gradient_end": "#2B86C5",
+    "notification": "#FFD166",
+    "success": "#3DFF9A",
+    "warning": "#FFD166",
+    "error": "#FF4D6D",
+    "battery": "#3DFF9A",
+    "system": "#2B86C5",
+    "media": "#FF3CAC",
+    "workspace_active": "#FF3CAC",
+    "workspace_inactive": "#3A3A52",
+    "active_border": "#784BA0",
+    "inactive_border": "#2A2A3C"
+  },
+  "effects": {
+    "rainbow_border": true,
+    "gradient": true,
+    "glow": 0.75
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 8
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "name": "Matrix",
+  "id": "matrix",
+  "author": "HyprTheme",
+  "description": "Phosphor green terminal rain",
+  "tags": [
+    "hacker",
+    "green",
+    "retro"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#00FF41",
+    "secondary": "#008F11",
+    "highlight": "#7CFF9B",
+    "background": "#000000",
+    "surface": "#030A05",
+    "surface2": "#07140B",
+    "text": "#C8FFD4",
+    "muted": "#4F9E63",
+    "border": "#00FF41",
+    "glow": "#00FF41",
+    "gradient_start": "#00FF41",
+    "gradient_end": "#003B00",
+    "notification": "#00FF41",
+    "success": "#00FF41",
+    "warning": "#C8FF41",
+    "error": "#FF5A41",
+    "battery": "#00FF41",
+    "system": "#00FF41",
+    "media": "#7CFF9B",
+    "workspace_active": "#00FF41",
+    "workspace_inactive": "#1E4D2B",
+    "active_border": "#00FF41",
+    "inactive_border": "#0B2E14"
+  },
+  "effects": {
+    "opacity": 0.9,
+    "blur": 8,
+    "radius": 2,
+    "glow": 0.7,
+    "gradient": true,
+    "border_width": 1
+  },
+  "wallpaper": {},
+  "components": {},
+  "fonts": {
+    "ui": "JetBrainsMono Nerd Font",
+    "mono": "JetBrainsMono Nerd Font",
+    "size": 12
+  },
+  "order": 11
+}

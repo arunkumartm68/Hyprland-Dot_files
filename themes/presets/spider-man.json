@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "name": "Spider-Man",
+  "id": "spider-man",
+  "author": "HyprTheme",
+  "description": "Red and blue with webbed highlights",
+  "tags": [
+    "marvel",
+    "red",
+    "blue"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#E62429",
+    "secondary": "#1F5BFF",
+    "highlight": "#FF5C5C",
+    "background": "#07090F",
+    "surface": "#0F1322",
+    "surface2": "#181E33",
+    "text": "#FFFFFF",
+    "muted": "#8E97B3",
+    "border": "#E62429",
+    "glow": "#1F5BFF",
+    "gradient_start": "#E62429",
+    "gradient_end": "#1F5BFF",
+    "notification": "#E62429",
+    "success": "#4ADE80",
+    "warning": "#FACC15",
+    "error": "#E62429",
+    "battery": "#4ADE80",
+    "system": "#1F5BFF",
+    "media": "#FF5C5C",
+    "workspace_active": "#E62429",
+    "workspace_inactive": "#2F3A63",
+    "active_border": "#E62429",
+    "inactive_border": "#1F2A4D"
+  },
+  "effects": {
+    "glow": 0.7,
+    "radius": 14
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 13
+}

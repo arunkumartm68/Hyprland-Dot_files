@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "name": "Ice Blue",
+  "id": "ice-blue",
+  "author": "HyprTheme",
+  "description": "Minimal, elegant, AMOLED",
+  "tags": [
+    "accent",
+    "minimal",
+    "amoled"
+  ],
+  "variant": "dark",
+  "preset": true,
+  "colors": {
+    "primary": "#3B82F6",
+    "secondary": "#60A5FA",
+    "highlight": "#93C5FD",
+    "background": "#000000",
+    "surface": "#0B1120",
+    "surface2": "#131C30",
+    "text": "#FFFFFF",
+    "muted": "#8393B0",
+    "border": "#3B82F6",
+    "glow": "#3B82F6",
+    "gradient_start": "#3B82F6",
+    "gradient_end": "#60A5FA",
+    "notification": "#3B82F6",
+    "success": "#4DFF88",
+    "warning": "#FFD166",
+    "error": "#FF4D6D",
+    "battery": "#4DFF88",
+    "system": "#3B82F6",
+    "media": "#A78BFA",
+    "workspace_active": "#3B82F6",
+    "workspace_inactive": "#2A3650",
+    "active_border": "#3B82F6",
+    "inactive_border": "#1E2A44"
+  },
+  "effects": {
+    "opacity": 0.92,
+    "blur": 6,
+    "glow": 0.35,
+    "neon_glow": false
+  },
+  "wallpaper": {},
+  "components": {},
+  "order": 4
+}
