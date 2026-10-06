@@ -20,6 +20,12 @@ Pick a preset, tweak any colour or effect, watch the live preview, press **APPLY
 
 ---
 
+## About this project
+
+This started as my personal **Hyprland** setup. I'm not a big fan of the excessive transparency found in many Hyprland themes, so I built my own rice with the help of Claude. It then grew into **HyprTheme**: the original configuration is still here under `config/` as the reference base, and everything above it is a real theming application so that any Arch Linux + Hyprland user can install it, pick a preset, tune every colour and effect, and switch the whole desktop from one place.
+
+I use Hyprland as my daily driver, so the defaults are tuned to be comfortable, functional and visually balanced rather than flashy. If you have suggestions or better ideas, open an issue or adapt it to your liking.
+
 ## What is HyprTheme?
 
 HyprTheme is a desktop theming application for [Hyprland](https://hypr.land). Instead of editing `hyprland.conf`, Waybar CSS, `kitty.conf`, a rofi `.rasi`, SwayNC CSS, `hyprlock.conf` and Wlogout CSS by hand, you edit **one theme** (colours, effects, wallpaper, component options) in a GUI or on the command line. HyprTheme renders every component's configuration from it, backs up what it replaces, writes the files, and reloads the running programs.
@@ -191,6 +197,29 @@ See [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md). The most common fixes:
 - Hyprland config error → set the rule syntax in Settings (`modern` for 0.53+, `legacy` for older, `lua`).
 - Wallpaper not set → install `swww` or `hyprpaper`; remove competing `exec-once` wallpaper lines.
 - Want everything back → `hyprtheme rollback` or `hyprtheme reset --original`.
+
+## Using only the dotfiles
+
+If you just want the reference rice without the application, the original configuration lives in `config/`:
+
+| Directory | Component |
+| --- | --- |
+| `config/hypr` | Hyprland, Hyprlock, Hyprpaper |
+| `config/waybar` | Waybar bar and style |
+| `config/kitty` | Kitty terminal |
+| `config/rofi`, `config/wofi` | Launchers |
+| `config/swaync`, `config/mako` | Notifications |
+| `config/fish`, `config/fastfetch`, `config/neofetch`, `config/cava` | Shell and terminal extras |
+
+```bash
+sudo pacman -S hyprland waybar kitty rofi-wayland dolphin fish fastfetch
+yay -S swaync hyprlock hyprpaper
+git clone https://github.com/arunkumartm68/Hyprland-Dot_files.git
+cd Hyprland-Dot_files
+cp -r config/* ~/.config/          # back up your own ~/.config first
+```
+
+Then log in to Hyprland from your session manager (sddm, greetd, ly). Those files contain a few machine-specific lines (monitor, keyboard layout, screenshot folder) that you will want to adjust; HyprTheme itself never hard-codes any of them.
 
 ## Development
 
